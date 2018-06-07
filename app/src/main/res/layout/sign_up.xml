@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:flatui="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/tv_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:text="Вход"
+        android:textColor="#000000"
+        android:textSize="23sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:text="Регистрация"
+                android:textColor="#000000"
+                android:textSize="30sp" />
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/et_email"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Почта"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                app:met_baseColor="#000000"
+                app:met_errorColor="#d10000"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelTextSize="16sp"
+                app:met_primaryColor="#000000"
+                flatui:met_minCharacters="6" />
+
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/et_password"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Пароль"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                app:met_baseColor="#000000"
+                app:met_errorColor="#d10000"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelTextSize="16sp"
+                app:met_maxCharacters="20"
+                app:met_primaryColor="#000000"
+                flatui:met_minCharacters="8" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/et_login"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Ник"
+                android:maxLines="1"
+                app:met_baseColor="#000000"
+                app:met_errorColor="#d10000"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelTextSize="16sp"
+                app:met_maxCharacters="15"
+                app:met_minCharacters="5"
+                app:met_primaryColor="#000000" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/et_description"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:hint="Опишите себя"
+                app:met_baseColor="#000000"
+                app:met_errorColor="#d10000"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelTextSize="16sp"
+                app:met_maxCharacters="50"
+                app:met_primaryColor="#000000"
+                flatui:met_minCharacters="20" />
+
+            <TextView
+                android:id="@+id/errorTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/cpb_red"
+                android:textSize="16sp" />
+
+            <com.cengalabs.flatui.views.FlatButton
+                android:id="@+id/btn_signup"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:text="Зарегистрироваться"
+                flatui:fl_blockButtonEffectHeight="3dp"
+                flatui:fl_theme="@array/dark"
+                flatui:fl_touchEffect="fl_ripple" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

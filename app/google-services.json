@@ -1,0 +1,86 @@
+{
+  "project_info": {
+    "project_number": "678167634472",
+    "firebase_url": "https://myinstagram-7e941.firebaseio.com",
+    "project_id": "myinstagram-7e941",
+    "storage_bucket": "myinstagram-7e941.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678167634472:android:15340c15f6a8bbbe",
+        "android_client_info": {
+          "package_name": "com.kikasik.myinstagram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678167634472-fvvipsj96t44phl6nd9tuijjvoh5509c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.kikasik.myinstagram",
+            "certificate_hash": "4de3ba0ac63cba037d210a843782f84ce0627a3b"
+          }
+        },
+        {
+          "client_id": "678167634472-tetms2lnmgfo3idh9hqv1202k19e2pb4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeFiULU9pl8IlxXgKmVXKq6VozPV4_s4U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "678167634472-tetms2lnmgfo3idh9hqv1202k19e2pb4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:678167634472:android:02b1db3de31a8e1d",
+        "android_client_info": {
+          "package_name": "com.LovellStudio.Flexogram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "678167634472-tetms2lnmgfo3idh9hqv1202k19e2pb4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeFiULU9pl8IlxXgKmVXKq6VozPV4_s4U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

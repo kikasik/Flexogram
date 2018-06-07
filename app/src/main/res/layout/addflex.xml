@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:flatui="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff">
+
+
+        <TextView
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="FLEXOGRAM"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/backToLenta"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:scaleType="center"
+            android:src="@mipmap/ic_back"
+            android:tint="#000000" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="#000000">
+
+        </FrameLayout>
+
+    </FrameLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:text="Событие"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/nameEt"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:hint="Название"
+                android:inputType="textCapSentences"
+                app:met_baseColor="#000000"
+                app:met_errorColor="#d10000"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelTextSize="16sp"
+                app:met_maxCharacters="20"
+                app:met_minCharacters="5"
+                app:met_primaryColor="#000000" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/descEt"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="Описание"
+                android:inputType="textMultiLine"
+                app:met_baseColor="#000000"
+                app:met_errorColor="#d10000"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelTextSize="16sp"
+                app:met_maxCharacters="500"
+                app:met_minCharacters="20"
+                app:met_primaryColor="#000000" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="70dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Приватное"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <com.cengalabs.flatui.views.FlatToggleButton
+                    android:id="@+id/togglePrivate"
+                    android:layout_width="72dp"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Full Flat"
+                    flatui:fl_cornerRadius="18dp"
+                    flatui:fl_size="20dp"
+                    flatui:fl_space="14dp"
+                    flatui:fl_theme="@array/dark" />
+
+            </LinearLayout>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/pin"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:enabled="false"
+                android:hint="Пароль"
+                android:inputType="numberPassword"
+                android:maxLength="4"
+                app:met_baseColor="#000000"
+                app:met_errorColor="#d10000"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelTextSize="16sp"
+                app:met_maxCharacters="4"
+                app:met_primaryColor="#000000" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:gravity="center">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/dateEt"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:editable="false"
+                    android:hint="Дата события"
+                    android:inputType="none"
+                    app:met_baseColor="#000000"
+                    app:met_errorColor="#d10000"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelTextSize="16sp"
+                    app:met_primaryColor="#000000" />
+
+                <ImageView
+                    android:id="@+id/calendarBtn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/calendar" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/timeEt"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:editable="false"
+                    android:hint="Время события"
+                    android:inputType="none"
+                    app:met_baseColor="#000000"
+                    app:met_errorColor="#d10000"
+                    app:met_floatingLabel="highlight"
+                    app:met_floatingLabelTextSize="16sp"
+                    app:met_primaryColor="#000000" />
+
+                <ImageView
+                    android:id="@+id/clockBtn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/clock" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="80dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Платный вход"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <com.cengalabs.flatui.views.FlatToggleButton
+                    android:id="@+id/toggleCost"
+                    android:layout_width="72dp"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="25dp"
+                    android:text="Full Flat"
+                    flatui:fl_cornerRadius="18dp"
+                    flatui:fl_size="20dp"
+                    flatui:fl_space="14dp"
+                    flatui:fl_theme="@array/dark" />
+
+            </LinearLayout>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/priceEt"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:enabled="false"
+                android:hint="Стоимость"
+                android:inputType="number"
+                android:maxLength="4"
+                app:met_baseColor="#000000"
+                app:met_errorColor="#d10000"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelTextSize="16sp"
+                app:met_maxCharacters="4"
+                app:met_primaryColor="#000000" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/freePlace"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:hint="Кол-во свободных мест"
+                android:inputType="number"
+                android:maxLength="2"
+                app:met_baseColor="#000000"
+                app:met_errorColor="#d10000"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelTextSize="16sp"
+                app:met_maxCharacters="2"
+                app:met_primaryColor="#000000" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp">
+
+                <ImageView
+                    android:id="@+id/getPhoto"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/btn_back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Фото"
+                    android:textColor="#000"
+                    android:textSize="20sp" />
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="70dp"
+                android:text="Адрес"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/cityEt"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:editable="false"
+                android:hint="Город"
+                android:inputType="none"
+                android:text="Ижевск"
+                app:met_baseColor="#000000"
+                app:met_errorColor="#d10000"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelTextSize="16sp"
+                app:met_minCharacters="3"
+                app:met_primaryColor="#000000" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/streetEt"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="Улица"
+                android:inputType="textCapSentences"
+                app:met_baseColor="#000000"
+                app:met_errorColor="#d10000"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelTextSize="16sp"
+                app:met_minCharacters="3"
+                app:met_primaryColor="#000000" />
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:id="@+id/houseEt"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="Дом"
+                android:inputType="date"
+                app:met_baseColor="#000000"
+                app:met_errorColor="#d10000"
+                app:met_floatingLabel="highlight"
+                app:met_floatingLabelTextSize="16sp"
+                app:met_minCharacters="1"
+                app:met_primaryColor="#000000" />
+
+            <TextView
+                android:id="@+id/errorTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/cpb_red"
+                android:textSize="16sp" />
+
+            <com.dd.CircularProgressButton
+                android:id="@+id/progressButton"
+                android:layout_width="196dp"
+                android:layout_height="64dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:cpb_colorIndicator="#202020"
+                app:cpb_cornerRadius="48dp"
+                app:cpb_selectorIdle="@drawable/idle_state_selector"
+                app:cpb_textComplete="Готово!"
+                app:cpb_textError="Ошибка"
+                app:cpb_textIdle="Создать событие" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

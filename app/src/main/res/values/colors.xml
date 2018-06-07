@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="invisible">#00ff4081</color>
+    <color name="transparent">#85000000</color>
+    <color name="sand">#c13b92</color>
+    <color name="sea">#4fa7ff</color>
+    <color name="evening">#4bb75f</color>
+    <color name="fire">#edd02a</color>
+</resources>

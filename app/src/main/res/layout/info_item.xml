@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:flatui="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/flexName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="25dp"
+            android:text="полный флекс"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="normal" />
+
+        <TextView
+            android:id="@+id/flexAccepted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical|end"
+            android:maxWidth="140dp"
+            android:text=""
+            android:textColor="@color/evening"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:text="Пока не одобрено" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="142dp"
+        android:layout_height="47dp"
+        android:background="@drawable/btn_back"
+        android:layout_gravity="center">
+
+        <com.cengalabs.flatui.views.FlatButton
+            android:id="@+id/infoBtn"
+            android:layout_width="140dp"
+            android:layout_gravity="center"
+            android:layout_height="45dp"
+            android:textColor="@color/evening"
+            flatui:fl_textAppearance="fl_none"
+            flatui:fl_theme="@array/snow"
+            flatui:fl_cornerRadius ="23dp"
+            flatui:fl_touchEffect="fl_ripple" />
+
+        <TextView
+            android:id="@+id/infoBtnText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Информация"
+            android:textColor="#000"
+            android:textSize="20sp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#fff"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@color/grey">
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/flexIcon"
+            android:layout_width="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="F"
+            android:textSize="20sp"
+            android:background="@drawable/circle"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:background="@color/grey">
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
